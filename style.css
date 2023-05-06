@@ -838,6 +838,7 @@ p{
     color: #2B2B2B;
     font-size: 1em;
     font-family: var(--ff-worksans);
+    
    }
    .footer-section{
     background-color: var(--clr-light-black);
@@ -913,7 +914,7 @@ p{
    }
 }
   
-  
+/* large mobile */
 
 @media only screen and (min-width: 23.5rem) and (max-width: 52.125rem){
  
@@ -926,12 +927,12 @@ p{
   }
 
   .container{
-   width: 375px;
+   max-width: 834px;
    
    
   }
   .even-columns{
-    max-width: 315px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: row;
@@ -941,6 +942,12 @@ p{
   .even-columns .fs-primary-heading{
     font-size: 1.75em;
     text-transform: capitalize;
+  }
+
+  .section-1{
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .section-1-column p{
     
@@ -965,6 +972,9 @@ p{
     align-items: center;
     margin-top: 2rem;
     gap: 1.75rem;
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   
 
@@ -1001,14 +1011,23 @@ p{
     font-size: 1.75em;
     
   }
+  .heading-col h3{
+   text-align: center;
+  }
+
   .heading-col p{
     font-size: 1em;
     margin-top: 0.8rem;
     font-family: var(--ff-worksans);
+    text-align: center;
 
   }
   .collection-card{
     margin-top: 1rem;
+    background-color: green;
+    max-width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
   .collection-card-row{
     margin-top: 2.5rem;
@@ -1016,9 +1035,9 @@ p{
   }
  
   .flex-img{
+    
     display: flex;
     align-items: center;
-    justify-content: center;
     column-gap: 0.5rem;
     margin-top: 1rem;
   }
@@ -1116,13 +1135,14 @@ p{
     
   }
   .category-head{
+    text-align: center;
     font-size: 1.8em;
     font-weight: var(--fw-bold);
     font-family: var(--ff-worksans);
   }
   .categoty-cards{
     display: grid;
-    justify-content: start;
+    justify-content: center;
     column-gap: 1.2rem;
     row-gap: 1.2rem;
     grid-template-columns: 9.21rem 9.21rem; 
@@ -1141,6 +1161,9 @@ p{
   .nft-card-row{
     margin-top: 1.3rem;
   }
+  .nft-card-row img{
+    width: 100%;
+  }
   .card-row-box{
     background-color: var(--clr-light-black);
     border-bottom-left-radius: 20px;
@@ -1150,6 +1173,10 @@ p{
   .card-row-box1{
     padding: 1rem;
     
+  }
+  .card-row-box1 img{
+    width: 24px;
+    height: 24px;
   }
   .card-row-box2{
     display: flex;
@@ -1194,7 +1221,7 @@ p{
   .mobile-highlight{
     display: block;
     position: relative;
-    width: 375px;
+    max-width: 100%;
   }
   .mobile-highlight-bg{
     background-image:
@@ -1345,10 +1372,11 @@ p{
     color: #2B2B2B;
     font-size: 1em;
     font-family: var(--ff-worksans);
+    
    }
    .footer-section{
     background-color: var(--clr-light-black);
-    width: 375px;
+    max-width: 100%;
     padding: 2rem;
    }
 
@@ -1403,6 +1431,10 @@ p{
      font-size: 1em;
      color: #cccccc;
    }
+   .footer-sub .subscribe-form input::placeholder{
+     padding-left: 1.3rem;
+   }
+
    .footer-sub .subscribe-form .section-button .button{
     margin-top: 1rem;
    }
