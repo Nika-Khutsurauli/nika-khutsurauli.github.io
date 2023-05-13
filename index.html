@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="primary-header | mobile-header">
+    <header class="primary-header">
       <div class="nav-wrapper">
         <a href="#"><img class="logo" src="/images/logo.svg" alt="Manage"></a>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation">
@@ -26,7 +26,10 @@
             <li><a href="#">Marketplace</a></li>
             <li><a href="#">Rankings</a></li>
             <li><a href="#">Connect a wallet</a></li>
-            <button class="sign-up-btn"><img src="images/User-logo.svg" alt="">Sign Up</button>
+            <button class="sign-up-btn">
+              <img src="images/User-logo.svg" alt="">
+              Sign Up
+            </button>
           </ul> 
         </nav>
       </div>  
@@ -82,16 +85,18 @@
       
       <section class="paddding-block-600">
         <div class="container">
-          <div class="even-columns">
+          <div class="top-heading">
             <div class="heading-col">
               <h3 class="fs-secondary-heading fw-bold fs-600">
                 Trending Collection
               </h3>
               <p class="fs-400">Checkout our weekly updated trending collection.</p>
             </div>
+          </div>
+          <div class="even-columns">
             <div class="collection-card-row">
               <div class="collection-card">
-                <img src="images/trending-collection/1/Primary Photo Placeholder.png" alt="">
+                <img class="trend-col-big-img" src="images/trending-collection/1/Primary Photo Placeholder.png" alt="">
                 <div class="flex-img">
                   <img src="images/trending-collection/1/Secondary Photo Placeholder-1.png" alt="">
                   <img src="images/trending-collection/1/Secondary Photo Placeholder.png" alt="">
@@ -106,7 +111,7 @@
                 </div>
               </div>
               <div class="collection-card">
-                <img src="images/trending-collection/2/Primary Photo Placeholder.png" alt="">
+                <img class="trend-col-big-img" src="images/trending-collection/2/Primary Photo Placeholder.png" alt="">
                 <div class="flex-img">
                   <img src="images/trending-collection/2/Secondary Photo Placeholder-1.png" alt="">
                   <img src="images/trending-collection/2/Secondary Photo Placeholder.png" alt="">
@@ -121,7 +126,7 @@
                 </div>
               </div>
               <div class="collection-card">
-                <img src="images/trending-collection/3/Primary Photo Placeholder.png" alt="">
+                <img class="trend-col-big-img" src="images/trending-collection/3/Primary Photo Placeholder.png" alt="">
                 <div class="flex-img">
                   <img src="images/trending-collection/3/Secondary Photo Placeholder-1.png" alt="">
                   <img src="images/trending-collection/3/Secondary Photo Placeholder.png" alt="">
@@ -142,7 +147,7 @@
 
       <section class="paddding-block-600">
         <div class="container">
-          <div class="even-columns">
+          <div class="top-heading">
             <div class="heading-col">
               <h3 class="fs-secondary-heading fw-bold fs-600">
                 Top creators  
@@ -152,8 +157,9 @@
             <div class="section-button-dark">
               <button class="button-dark"><img src="images/RocketLaunch.svg" alt="">View Rankings</button>
             </div>
-            <div class="artist-cards">
-             
+          </div>
+          <div class="even-columns">
+            <div class="artist-cards">       
                 <div class="artist-card">
                   <div class="ranking-numbers">
                     <div class="rank"><p>1</p></div> 
@@ -301,8 +307,7 @@
                     <p>Total Sales:</p>
                     <p>34.53 ETH</p>
                   </div>
-                </div>
-              
+                </div>      
             </div>
           </div>
         </div>
@@ -310,8 +315,12 @@
 
       <section class="paddding-block-600">
         <div class="container">
-          <div class="even-columns">
-            <h3 class="category-head">Browse Categories</h3>
+          <div class="top-heading">
+            <div class="heading-col">
+              <h3 class="category-head">Browse Categories</h3>
+            </div>
+          </div>
+          <div class="even-columns">      
             <div class="categoty-cards">
               <div class="category-card">
                 <img src="images/Image Placeholder-7.png" alt="">
@@ -352,7 +361,7 @@
 
       <section class="paddding-block-600">
         <div class="container">
-          <div class="even-columns">
+          <div class="top-heading">
             <div class="heading-col">
               <h3 class="fs-secondary-heading fw-bold fs-600">
                 Discover More NFTs     
@@ -365,6 +374,8 @@
                 See All
               </button>
             </div>
+          </div>
+          <div class="even-columns">
             <div class="nft-cards-row">
               <div class="nft-card-row">
                 <img src="images/distant-galaxy.png" alt="">
@@ -446,7 +457,7 @@
             <div class="mobile-highlight-bg"></div>
             <div class="mobile-highlight-artist">
               <div class="mobile-highlight-artistcard">
-                <img src="images/avatars/avatar-7.png">
+                <img src="images/avatars/Avatar-7.png">
                 <p>Shroomie</p>
               </div>
               <div class="mobile-highlight-heading fw-bold">
@@ -483,12 +494,14 @@
 
       <section class="paddding-block-600">
         <div class="container">
+          <div class="top-heading">
+            <div class="heading-col">
+              <h3 class="fs-secondary-heading fw-bold fs-600">How it works</h3>
+              <p>Find out how to get started</p>
+            </div>
+          </div>
           <div class="even-columns">
             <div class="card-row">
-              <div class="heading-col">
-                <h3 class="fs-secondary-heading fw-bold fs-600">How it works</h3>
-                <p>Find out how to get started</p>
-              </div>
               <div class="info-card">
                 <div class="info-card-img">
                   <img src="images/info-card-icons/Setup Wallet Icon.svg" alt="">
@@ -523,22 +536,25 @@
 
       <section class="paddding-block-600">
         <div class="container">
-          <div class="even-columns">
-            <div>
-              <img src="images/austronavt-reading.png" alt="">
-            </div>
+          <div class="even-columns">       
             <div class="subscribe-widget-row">
-              <h3 class="fs-secondary-heading fw-bold fs-600">Join our weekly digest</h3>
-              <div class="heading-col">
-                <p>Get exclusive promotions & updates straight to your inbox.</p>
+              <div>
+                <img class="austronavt-reading-img" src="images/austronavt-reading.png" alt="">
               </div>
               <div class="subscribe-form">
-                <form>
-                  <input type="text" placeholder="Enter your email here"> 
-                  <div class="section-button">
-                    <button class="button"><img src="images/icons/message-icon.svg" alt="">Subscribe</button>
+               
+                  <div class="heading-col-subscribe">
+                    <h3 class="fs-secondary-heading fw-bold fs-600">Join our weekly digest</h3>
+                    <p>Get exclusive promotions & updates straight to your inbox.</p>
                   </div>
-                </form>
+                
+                  <div class="subscribe-forms">
+                    <form>
+                        <input type="text" placeholder="Enter your email here"> 
+                        <button class="button"><img src="images/icons/message-icon.svg" alt="">Subscribe</button>
+                    </form>
+                  </div>
+                  
               </div>
             </div>
           </div>
@@ -547,44 +563,52 @@
     </main>
    
     <footer class="footer-section">
-      <div class="logo footer-logo">
-        <img src="images/logo.svg" alt="">
-      </div>
-      <div class="footer-community">
-        <p>NFT marketplace UI created with Anima for Figma.</p>
-        <p>Join our community</p>
-      </div>
-      <div class="footer-social">
-        <a href="#"><img src="images/footer-social/DiscordLogo.png" alt=""></a>
-        <a href="#"><img src="images/footer-social/YoutubeLogo.png" alt=""></a>
-        <a href="#"><img src="images/footer-social/TwitterLogo.png" alt=""></a>
-        <a href="#"><img src="images/footer-social/InstagramLogo.png" alt=""></a> 
-      </div>
-      <div class="footer-nav">
-        <h5 class="fs-primary-heading fs-400">Explore</h5>
-        <nav>
-          <ul>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="#">Rankings</a></li>
-            <li><a href="#">Connect a wallet</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer-sub">
-        <h5>Join our weekly digest</h5>
-        <p>Get exclusive promotions & updates straight to your inbox.</p>
-        <div class="subscribe-form">
-          <form>
-            <input type="text" placeholder="Enter your email here"> 
-            <div class="section-button">
-              <button class="button"><img src="images/icons/message-icon.svg" alt="">Subscribe</button>
+      <div class="container">
+        <div class="even-columns">
+          <div class="footer-container">
+          <div class="footer-community">
+            <div class="footer-logo">
+              <img src="images/logo.svg" alt="">
             </div>
-          </form>
+            <p>NFT marketplace UI created with Anima for Figma.</p>
+            <p>Join our community</p>
+            <div class="footer-social">
+              <a href="#"><img src="images/footer-social/DiscordLogo.png" alt=""></a>
+              <a href="#"><img src="images/footer-social/YoutubeLogo.png" alt=""></a>
+              <a href="#"><img src="images/footer-social/TwitterLogo.png" alt=""></a>
+              <a href="#"><img src="images/footer-social/InstagramLogo.png" alt=""></a> 
+            </div>
+          </div>
+          <div class="footer-nav">
+            <h5 class="fs-secondary-heading fs-300">Explore</h5>
+            <nav>
+              <ul>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Rankings</a></li>
+                <li><a href="#">Connect a wallet</a></li>
+              </ul>
+            </nav>
+          </div>
+        <div class="footer-sub">
+          <h5>Join our weekly digest</h5>
+          <p>Get exclusive promotions & updates straight to your inbox.</p>
+          <div class="footer-subscribe-form">
+            <form>
+                <input type="text" name="footer_name" autocomplete="auto" placeholder="Enter your email here">
+                <button class="footer-button">
+                  <img src="images/icons/message-icon.svg" alt="">
+                  Subscribe
+                </button>
+            </form>
+          </div>
+        </div>
         </div>
       </div>
       <div class="footer-copyright">
         <p>Ⓒ NFT Market. Use this template freely.</p>
       </div>
+    </div>
+   
   </footer>
     <script type="module" src="/main.js"></script>
   </body>
