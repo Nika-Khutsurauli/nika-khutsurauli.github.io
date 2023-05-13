@@ -889,6 +889,7 @@ p{
     }
     .footer-copyright p{
      margin-top: 1.3rem;
+     margin-bottom: 1.3rem;
      color: #cccccc;
      font-family: var(--ff-worksans);
     }
@@ -2094,17 +2095,17 @@ p{
   
   .subscribe-forms input[type=text] {
     background: #fff;
-    width: clamp(8rem,12rem, 30vw);
-    
+    width: clamp(8rem,12rem, 15rem);
     border: 1px solid #cbcbce;
     border-radius: 3.25rem;
     color: #3a3d4b;
     height: 2.8rem;
     border-radius: 1.3rem;
-    font-size:clamp(0.5rem, 0.5vw + 0.1vw, 2rem);
+    font-size:clamp(0.5rem, 0.5vw + 0.2vw, 2rem);
     margin-top: 0.5rem;
     outline: none;
-    
+    text-align: left;
+    padding: 0.5rem;
   }
   
  .subscribe-forms .button {
@@ -2118,7 +2119,7 @@ p{
     color: var(--clr-white);
     width: clamp(8rem, 10rem, 20rem);
     border-radius: 20px;
-    left: calc(260px + 1.4rem);
+    left: clamp(min(260px + 1.4rem),100%,max(300px + 1.4rem));
     transform: translateX(-100%);
     bottom: 4rem;
     font-family: var(--ff-worksans);
@@ -2199,16 +2200,19 @@ p{
     position: relative;
   }
   
-  .footer-subscribe-form input[type=text] {
+  .footer-subscribe-form input {
     background: #fff;
-    width: clamp(6rem, 10rem,30rem);
-    padding: 0.7rem;
-    border: 1px solid #cbcbce;
-    border-radius: 1.3rem;
+    width: clamp(8rem,12rem, 15rem);
+    height: 2.8rem;
+    border-radius: 3.25rem;
     color: #3a3d4b;
-    font-size: clamp(0.75rem,1vw,1rem);
+    
+    border-radius: 1.3rem;
+    font-size:clamp(0.5rem, 0.75rem, 2rem);
+    margin-top: 0.5rem;
     outline: none;
-    height: 2.5rem;
+    text-align: left;
+    padding: 0.5rem;
   }
   
  .footer-subscribe-form .footer-button {
@@ -2217,17 +2221,17 @@ p{
     align-items: center;
     position: absolute;
     background:var(--clr-action-likeblue);
-    padding: 0.8rem;
+    padding: 0.5rem;
     border: none;
     color: var(--clr-white);
-    width: clamp(4rem, 6rem,12rem);
-    height: 2.5rem;
+    width: clamp(4rem, 8rem, 10rem);
     border-radius: 1.3rem;
-    left: calc(200px + 1.4rem);
+    left: clamp(min(230px + 1.4rem),100%,max(250px + 1.4rem));
     transform: translateX(-100%);
     bottom: 4rem;
     font-family: var(--ff-worksans);
     font-size: var(--fs-300);
+    height: 2.8rem;
   }
   .footer-subscribe-form .footer-button img{
     display: none;
@@ -2261,7 +2265,7 @@ p{
   margin: 0;
   padding: 0;
   font: inherit;
-  /* background: rgb(0 100 0 / 0.1) !important; */
+  background: rgb(0 100 0 / 0.1) !important;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
