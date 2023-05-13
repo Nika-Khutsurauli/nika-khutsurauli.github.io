@@ -118,18 +118,13 @@ p{
   justify-content:center;
   align-items: center;
   gap: var(--size-nav);
-  font-weight: var(fw-bold);
+  font-weight: var(--fw-bold);
   font-size: var(--fs-300);
   font-family: var(--ff-worksans);
 }
 
 
-/* .container{
-  --max-width: 1050px;
-  --padding: 1rem;
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
-} */
+
 
 .even-columns{
   display: grid;
@@ -547,10 +542,9 @@ p{
    }
    .categoty-cards{
      display: grid;
-     justify-content: center;
+     grid-template-columns: 1fr 1fr; 
      column-gap: 1.2rem;
      row-gap: 1.2rem;
-     grid-template-columns: 9.21rem 9.21rem; 
    }
  
  
@@ -955,7 +949,7 @@ p{
   
   .flex-view-box{
     display: flex;
-    align-items: center;
+    place-items: center;
     margin-top: 1.5rem;
     gap: 1.75rem;
    
@@ -1176,10 +1170,10 @@ p{
   }
   .categoty-cards{
     display: grid;
-    justify-content: center;
     column-gap: 1.2rem;
     row-gap: 1.2rem;
-    grid-template-columns: 9.375rem 9.375rem 9.375rem 9.375rem; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: clamp(40rem,80%,100%); 
   }
 
 
@@ -2101,16 +2095,16 @@ p{
   .subscribe-forms input[type=text] {
     background: #fff;
     width: clamp(8rem,12rem, 30vw);
-    padding: 0.7rem;
+    
     border: 1px solid #cbcbce;
     border-radius: 3.25rem;
     color: #3a3d4b;
     height: 2.8rem;
     border-radius: 1.3rem;
-    font-size:clamp(0.5rem, 0.5vw + 0.2vw, 2rem);
+    font-size:clamp(0.5rem, 0.5vw + 0.1vw, 2rem);
     margin-top: 0.5rem;
     outline: none;
-    text-align: left;
+    
   }
   
  .subscribe-forms .button {
